@@ -19,7 +19,7 @@
 			
 			var html = '<div class="imageview">'
 				+'<div class="title"></div>'
-				+'<a href="javascript:;" class="hide"></a>'
+				+'<a href="javascript:;" class="hide-imageview"></a>'
 				+'<a href="javascript:;" class="prev"></a>'
 				+'<a href="javascript:;" class="next"></a>'
 				+'<div class="image"><img src="" /></div>'
@@ -27,7 +27,7 @@
 		
 			this.$viewer = $(html).appendTo('body');
 			this.$title = $('.title', this.$viewer);
-			this.$hide = $('.hide', this.$viewer);
+			this.$hide = $('.hide-imageview', this.$viewer);
 			this.$prev = $('.prev', this.$viewer);
 			this.$next = $('.next', this.$viewer);
 			this.$image = $('.image img', this.$viewer);
@@ -62,6 +62,11 @@
 			if (e.keyCode == 39) {
 				if (this.i < this.last) this.next();
 			}
+
+			if (this.opts.useEscapeButton && e.keyCode == 27) {
+				this.hide();
+			}
+
 		}
 		
 		this.next = function() {

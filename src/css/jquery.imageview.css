@@ -1,7 +1,7 @@
 .imageview .title,
 .imageview .prev,
 .imageview .next,
-.imageview .hide {
+.imageview .hide-imageview {
 	-background-color: rgba(0, 255, 0, 0.2);
 }
 
@@ -17,7 +17,7 @@
 }
 .imageview .prev,
 .imageview .next,
-.imageview .hide {
+.imageview .hide-imageview {
 	position: absolute;
 	opacity: 0.5;
 	background-repeat: no-repeat;
@@ -28,7 +28,7 @@
 }
 .imageview .prev:hover,
 .imageview .next:hover,
-.imageview .hide:hover {
+.imageview .hide-imageview:hover {
 	opacity: 1;
 }
 .imageview .prev,
@@ -48,7 +48,7 @@
 	right: 0px;
 	background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCA0NTEuODQ2IDQ1MS44NDciPjxwYXRoIGZpbGw9IiNmZmZmZmYiIGQ9Ik0zNDUuNDQxLDI0OC4yOTJMMTUxLjE1NCw0NDIuNTczYy0xMi4zNTksMTIuMzY1LTMyLjM5NywxMi4zNjUtNDQuNzUsMGMtMTIuMzU0LTEyLjM1NC0xMi4zNTQtMzIuMzkxLDAtNDQuNzQ0TDI3OC4zMTgsMjI1LjkyTDEwNi40MDksNTQuMDE3Yy0xMi4zNTQtMTIuMzU5LTEyLjM1NC0zMi4zOTQsMC00NC43NDhjMTIuMzU0LTEyLjM1OSwzMi4zOTEtMTIuMzU5LDQ0Ljc1LDBsMTk0LjI4NywxOTQuMjg0YzYuMTc3LDYuMTgsOS4yNjIsMTQuMjcxLDkuMjYyLDIyLjM2NkMzNTQuNzA4LDIzNC4wMTgsMzUxLjYxNywyNDIuMTE1LDM0NS40NDEsMjQ4LjI5MnoiLz48L3N2Zz4=');
 }
-.imageview .hide {
+.imageview .hide-imageview {
 	z-index: 10002;
 	top: 0%;
 	right: 0%;

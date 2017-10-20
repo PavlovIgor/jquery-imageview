@@ -32,6 +32,7 @@ $('.photos').imageview();
 - **targetSelector** - pictures selector (default: `a`)
 - **srcAttr** - picture attribute containing big image url (default: `href`)
 - **titleAttr** - picture attribute containing title (default: `title`)
+- **useEscapeButton** - use escape button for close (default: false)
 
 ## License
 
